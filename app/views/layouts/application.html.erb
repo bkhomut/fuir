@@ -1,14 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Fuir</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <meta charset="utf-8">
+  <title>I'm Right</title>
 
-<%= yield %>
+
+  <%= stylesheet_link_tag    "bootstrap-theme", :media => "all" %>
+  <%= stylesheet_link_tag    "bootstrap", :media => "all" %>
+  <%= javascript_include_tag "bootstrap" %>
+  <%= csrf_meta_tags %>
+  
+  <script src="jquery.min.js"></script>
+  <script src="application.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<header>
+      <div>
+          <div class="navbar-header">
+            <a><img src="/assets/question_guy.png" width="120" height="auto" ></a>
+          </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><big>FU I'm Right</big></li>
+                <li></li>
+                <li><input type="text" placeholder="Search" class="form-control">
+                  <button type="submit" class="btn btn-ques">Ask a Question</button>
+                  <button type="submit" class="btn btn-ques">Top Questions</button>
+                </li>
+                <li></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li></li>
+                <li></li>
+                <li><a><img src="/assets/profile1.jpg" width="50" height="50"></a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+   
+  </header>
+</head>
+
+<body class = "container">
+
+    <%= yield %>
 
 </body>
 </html>
