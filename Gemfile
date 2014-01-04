@@ -24,7 +24,8 @@ group :development do
 end
 
 group :production do
-	
+	gem 'activerecord-postgresql-adapter'
+	gem 'pg'
 end
 
 
