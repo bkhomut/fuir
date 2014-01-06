@@ -1,6 +1,10 @@
 
-html { 
-	background: url(gray2.jpg) repeat;
+html {
+  background: url(gray2.jpg) repeat;
+  src: url('/assets/jonze.eot');
+  font-family: 'jonze', serif, Arial;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
 }
 
 header {
@@ -18,6 +22,7 @@ body {
   font-size: 16px;
   width: 960px;
   margin: 20px auto;
+  background-color: transparent;
 }
 
 
@@ -26,6 +31,8 @@ input { font-size: 16px;}
 .right{
 	float:right;
 }
+
+
 /* search bar style */
 
 	.tfheader{
@@ -82,7 +89,7 @@ input { font-size: 16px;}
 big {
   src: url('/assets/jonze.eot');
   font-family: 'jonze', serif, Arial;
-  font-size: 4.2em;
+  font-size: 1.4em;
 }
 
 .qbox_large {
