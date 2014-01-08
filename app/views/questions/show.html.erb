@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Question:</b>
+  <%= @question.question %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @question.category_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @question.user_id %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @question.created %>
+</p>
+
+<p>
+  <b>Public:</b>
+  <%= @question.public %>
+</p>
+
+<p>
+  <b>Geo:</b>
+  <%= @question.geo %>
+</p>
+
+
+<%= link_to 'Edit', edit_question_path(@question) %> |
+<%= link_to 'Back', questions_path %>

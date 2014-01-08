@@ -3,24 +3,22 @@
 <head>
   <meta charset="utf-8">
   <title>I'm Right</title>
-
   <%= stylesheet_link_tag "application", :media => "all" %>
   <%= csrf_meta_tags %>
-  
   <script src="jquery.min.js"></script>
   <script src="application.js"></script>
-
+  <link href="/assets/bootstrap.css?body=1" media="all" rel="stylesheet" type="text/css">
+  <link href="/assets/fuir.css?body=1" media="all" rel="stylesheet" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-	<header>
-      <div>
-          <div class="navbar-header">
-            <a><img src="/assets/question_guy.png" width="120" height="auto" ></a>
-          </div>
-            <div>
+<body class = "container">
+  <header>
+      <div class="navbar-header navbar">
+          <div>
               <ul class="nav navbar-nav">
+                <li><a><img src="/assets/question_guy.png" width="120" height="auto" ></a></li>
                 <li><big>FU I'm Right</big></li>
-                <li></li>
                 <li><input type="text" placeholder="Search" class="form-control">
                   <button type="submit" class="btn btn-ques">Ask a Question</button>
                   <button type="submit" class="btn btn-ques">Top Questions</button>
@@ -33,14 +31,11 @@
                 <li><a><img src="/assets/profile1.jpg" width="50" height="50"></a></li>
               </ul>
           </div>
-      </div>
-   
+      </div>   
   </header>
-</head>
 
-<body class = "container">
+  
+      <%= yield %>
+  </body>
 
-    <%= yield %>
-
-</body>
 </html>
