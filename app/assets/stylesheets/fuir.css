@@ -1,12 +1,11 @@
 
 html {
-  background: url(gray2.jpg) repeat;
+  background: #B7B8BD;
   src: url('/assets/jonze.eot');
   font-family: 'jonze', serif, Arial;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
-
 
 body {
   font-family: 'jonze', Helvetica, Arial;
@@ -19,14 +18,44 @@ body {
 input { font-size: 16px;}
 
 
-
 /* OTHER CHANGES    */
 
-big {
+.big {
   src: url('/assets/jonze.eot');
   font-family: 'jonze', serif, Arial;
-  font-size: 4.2em;
+  color:#231F20;
+  font-size: 9em;
+  text-align: center;
 }
+
+.medium {
+  src: url('/assets/jonze.eot');
+  font-family: 'jonze', serif, Arial;
+  color: #231F20;
+  font-size: 4em;
+  text-align: center;
+}
+
+.big-guy{
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: auto;
+  padding:0px 0px 0 0px;
+  text-align: center;
+}
+
+.logo{
+  display: block;  
+  margin-left: auto;
+  margin-right: auto;
+  height: 80px;
+  width: auto;
+  padding:0px 0px 0 0px;
+  text-align: center;
+}
+
 
 .qbox_large {
     position: relative;
@@ -41,7 +70,9 @@ big {
     text-align: center;
     padding:10px 10px 0 10px;
     box-shadow: 5px 5px 10px 0px;
-    margin: 0 10px 35px 10px;
+    margin: 0 20px 35px 20px;
+    font-weight: normal;
+
 }
 
 .abox {
@@ -54,6 +85,7 @@ big {
     text-align: left;
     padding:10px 10px 0 10px;
     cursor: pointer;
+    font-weight: normal;
 }
 
 .bbox {
@@ -66,6 +98,7 @@ big {
     text-align: left;
     padding:10px 10px 0 10px;
     cursor: pointer;
+    font-weight: normal;
 }
 
 .heart {
